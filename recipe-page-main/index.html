@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'rose-white': 'hsl(330, 100%, 98%)',
+            'eggshell': 'hsl(30, 54%, 90%)',
+            'wenge-brown': 'hsl(30, 10%, 34%)',
+            'dark-charcoal': 'hsl(24, 5%, 18%)',
+            'dark-raspberry': 'hsl(332, 51%, 32%)',
+            'nutmeg': 'hsl(14, 45%, 36%)',
+          },
+          fontFamily: {
+            'young-serif': ["Young Serif", "serif"],
+            'outfit': ["Outfit", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+   <style type="text/tailwindcss">
+    @layer base {
+      body {
+        @apply bg-eggshell font-outfit text-wenge-brown;
+      }
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <title>Frontend Mentor | Recipe page</title>
+</head>
+<body>
+  <div class="flex h-auto md:py-20">
+    <div class="h-fit w-full md:w-1/2 xl:w-[35%] bg-white md:p-5 rounded-lg mx-auto">
+      <img src="./assets/images/image-omelette.jpeg" alt="image-omelette" class="md:rounded-lg">
+      <div class="p-5 md:p-0">
+        <div class="flex flex-col gap-y-4 my-6">
+          <h1 class="font-young-serif text-3xl md:text-4xl text-dark-charcoal">Simple Omelette Recipe</h1>    
+          <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>    
+        </div>
+        <div class="flex flex-col gap-y-2 bg-rose-white p-5 px-8 rounded-lg mb-6">
+          <p class="text-dark-raspberry font-bold text-lg">Preparation time</p>
+          <ul class="list-disc list-inside text-sm leading-8">
+            <li><span class="font-bold">Total:</span> Approximately 10 minutes</li>
+            <li><span class="font-bold">Preparation:</span> 5 minutes</li>
+            <li><span class="font-bold">Cooking:</span> 5 minutes</li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-y-2 pb-5 border-b mb-6">
+          <h1 class="font-young-serif text-2xl text-nutmeg">Ingredients</h1>
+          <div class="px-2">
+            <ul class="list-disc list-inside text-sm leading-8 font-medium">
+              <li>2-3 large eggs</li>
+              <li>Salt, to taste</li>
+              <li>Pepper, to taste</li>
+              <li>1 tablespoon of butter or oil</li>
+              <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-2 pb-5 border-b mb-6">
+          <h1 class="font-young-serif text-2xl text-nutmeg">Instructions</h1>
+          <div class="px-1">
+            <ul class="list-decimal leading-8 pl-5 marker:text-nutmeg font-bold text-[15px]">
+              <li><div class="pl-3"><span class="font-bold">Beat the eggs:</span> <span class="font-medium">In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</span></div></li>
+              <li><div class="pl-3"><span class="font-bold">Heat the pan:</span> <span class="font-medium">Place a non-stick frying pan over medium heat and add butter or oil.</span></div></li>
+              <li><div class="pl-3"><span class="font-bold">Cook the omelette:</span> <span class="font-medium">Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span></div></li>
+              <li><div class="pl-3"><span class="font-bold">Add fillings (optional):</span> <span class="font-medium">When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</span></div></li>
+              <li><div class="pl-3"><span class="font-bold">Fold and serve:</span> <span class="font-medium">As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</span></div></li>
+              <li><div class="pl-3"><span class="font-bold">Enjoy:</span> <span class="font-medium">Serve hot, with additional salt and pepper if needed.</span></div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-2 pb-5">
+          <h1 class="font-young-serif text-2xl text-nutmeg">Nutrition</h1>
+          <p class="text-sm font-medium">The table below shows nutritional values per serving without the additional fillings.</p>
+          <table class="table-fixed border-separate p-5 font-medium">
+            <tbody>
+              <tr>
+                <td class="border-b pl-3 py-3">Calories</td>
+                <td class="border-b pl-3 py-3 text-nutmeg font-bold">277kcal</td>
+              </tr>
+              <tr>
+                <td class="border-b pl-3 py-3">Carbs</td>
+                <td class="border-b pl-3 py-3 text-nutmeg font-bold">0g</td>
+              </tr>
+              <tr>
+                <td class="border-b pl-3 py-3">Protein</td>
+                <td class="border-b pl-3 py-3 text-nutmeg font-bold">20g</td>
+              </tr>
+              <tr>
+                <td class="pl-3 py-3">Fat</td>
+                <td class="pl-3 py-3 text-nutmeg font-bold">22g</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">JijiQT</a>.
+  </div>
+</body>
+</html>
